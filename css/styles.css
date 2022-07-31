@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.block{
+    margin: 30px auto;
+    margin-bottom: 0;
+    width: 1125px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.puzzle, .complete-puzzle{
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 0 5px 5px rgb(145, 141, 141);
+    background-color: rgb(235, 235, 235);
+}
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.478);
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    display: none;
+}
+.modal-window{
+    width: 800px;
+    padding-top: 25px;
+    height: 200px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+.text{
+    text-align: center;
+    font-size: 40px;
+    height: 70px;
+    line-height: 70px;
+
+}
+/* hr{
+    background-color: #c52331;
+} */
+.time{
+    text-align: center;
+    font-size: 80px;
+    height: 100px;
+    margin: 20px 0;
+}
+.buttons{
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    align-items: center;
+}
+.btn-block{
+    margin: 20px auto;
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button, .btn{
+    background-color: #db3445;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.check{
+    background-color: #1c9442;
+    display: none;
+}
+.btn{
+    height: 40px;
+    width: 70px;
+}
+.buttons button:disabled{
+    background-color: #e57c80;
+}
+.buttons button:disabled:hover{
+    background-color: #e57c80;
+}
+.buttons button:hover{
+    background-color: #c52331;
+}
+button:hover{
+    cursor: pointer;
+
+}
+.puzzle{
+    display: flex;
+    flex-wrap: wrap;
+   position: relative;
+}
+.fragment, .fragments{
+    width: 125px;
+    height: 125px;
+   position: absolute;
+}
+.fragment:nth-of-type(1){
+    background: url(../images/faec184f9e2861be338d61c55c1abb39.jpg) 0 0;
+    left: 0;
+    
+}
+.fragment:nth-of-type(2){
+    background: url(../images/faec184f9e2861be338d61c55c1abb39.jpg) -125px 0;
+    left: 125px;
+}
+.fragment:nth-of-type(3){
+    background: url(../images/faec184f9e2861be338d61c55c1abb39.jpg) -250px 0;
+    left: 250px;
+}
+.fragment:nth-of-type(4){
+    background: url(../images/faec184f9e2861be338d61c55c1abb39.jpg) 125px 0;
+    left: 375px;
+}
+.fragment:nth-of-type(5){
+    background: url(../images/faec184f9e2861be338d61c55c1abb39.jpg) 0px -125px;
+    top: 125px;
+}
+.fragment:nth-of-type(6){
+    background: url(../images/faec184f9e2861be338d61c55c1abb39.jpg) -125px -125px;
+    left: 125px;
+    top: 125px;
+    
+}
+.fragment:nth-of-type(7){
+    background: url(../images/faec184f9e2861be338d61c55c1abb39.jpg) -250px -125px;
+    left: 250px;
+    top: 125px;
+}
+.fragment:nth-of-type(8){
+    background: url(../images/faec184f9e2861be338d61c55c1abb39.jpg) 125px -125px;
+    left: 375px;
+    top: 125px;
+}
+.fragment:nth-of-type(9){
+    background: url(../images/faec184f9e2861be338d61c55c1abb39.jpg) 0px -250px;
+    left: 0px;
+    top: 250px;
+}
+.fragment:nth-of-type(10){
+    background: url(../images/faec184f9e2861be338d61c55c1abb39.jpg) -125px -250px;
+    left: 125px;
+    top: 250px;
+}
+.fragment:nth-of-type(11){
+    background: url(../images/faec184f9e2861be338d61c55c1abb39.jpg) -250px -250px;
+    left: 250px;
+    top: 250px;
+}
+.fragment:nth-of-type(12){
+    background: url(../images/faec184f9e2861be338d61c55c1abb39.jpg) 125px -250px;
+    left: 375px;
+    top: 250px;
+}
+.fragment:nth-of-type(13){
+    background: url(../images/faec184f9e2861be338d61c55c1abb39.jpg) 0px 125px;
+    left: 0px;
+    top: 375px;
+}
+.fragment:nth-of-type(14){
+    background: url(../images/faec184f9e2861be338d61c55c1abb39.jpg) -125px 125px;
+    left: 125px;
+    top: 375px;
+}
+.fragment:nth-of-type(15){
+    background: url(../images/faec184f9e2861be338d61c55c1abb39.jpg) -250px 125px;
+    left: 250px;
+    top: 375px;
+}
+.fragment:nth-of-type(16){
+    background: url(../images/faec184f9e2861be338d61c55c1abb39.jpg) 125px 125px;
+    left: 375px;
+    top: 375px;
+}
+.show{
+    display: block;
+}
